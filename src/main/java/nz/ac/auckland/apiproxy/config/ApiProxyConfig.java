@@ -11,7 +11,7 @@ import nz.ac.auckland.apiproxy.exceptions.ApiProxyException;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ApiProxyConfig {
 
-  private String email = null;
+  private String email =  null;
   private String apiKey = null;
 
   private static ApiProxyConfig instance;
