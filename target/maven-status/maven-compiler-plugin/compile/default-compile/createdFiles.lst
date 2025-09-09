@@ -1,0 +1,17 @@
+nz/ac/auckland/apiproxy/tts/TextToSpeechRequest$Voice.class
+nz/ac/auckland/apiproxy/tts/ResponseTtsViaProxy.class
+nz/ac/auckland/apiproxy/tts/TextToSpeechResult.class
+nz/ac/auckland/apiproxy/chat/openai/ChatCompletionResult.class
+nz/ac/auckland/apiproxy/chat/openai/ChatCompletionRequest$Model.class
+nz/ac/auckland/apiproxy/tts/TextToSpeechRequest$Provider.class
+nz/ac/auckland/apiproxy/config/ApiProxyConfig.class
+nz/ac/auckland/apiproxy/chat/openai/Choice.class
+nz/ac/auckland/se283/prompts/PromptEngineering.class
+nz/ac/auckland/apiproxy/service/EndPoints.class
+nz/ac/auckland/se283/GptClient.class
+nz/ac/auckland/App.class
+nz/ac/auckland/apiproxy/chat/openai/ChatCompletionRequest.class
+nz/ac/auckland/apiproxy/exceptions/ApiProxyException.class
+nz/ac/auckland/apiproxy/chat/openai/ChatMessage.class
+nz/ac/auckland/apiproxy/tts/TextToSpeechRequest.class
+nz/ac/auckland/apiproxy/chat/openai/ResponseChatCompletionViaProxy.class

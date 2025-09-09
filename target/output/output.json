@@ -1,0 +1,124 @@
+{
+  "results": [
+    {
+      "us_id": "US1",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Manny’s food service customer, I want food items to be displayed with different colors based on their type, so that I can quickly identify the food type at a glance.",
+      "optional_explanation": "The story clearly states the user, their goal, and the value. The color coding is a user-facing feature that provides immediate visual differentiation, with no conflation of solutions or requirements."
+    },
+    {
+      "us_id": "US2",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a reader, I want to bookmark pages so that I can easily find relevant content later.",
+      "optional_explanation": "The story is straightforward, with a clear user goal and value. It does not conflate solutions or requirements, nor is it too broad."
+    },
+    {
+      "us_id": "US3",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Manny’s food service customer, I want to save my list so that I can access it later for reordering or reference.",
+      "optional_explanation": "The story specifies a user goal and value without conflating technical solutions or being overly broad."
+    },
+    {
+      "us_id": "US4",
+      "estimated_problem_id": 4,
+      "corrected_us": "As a blogger who codes, I want my blogging system to display my GitHub activity so that my readers can see my coding contributions and projects.",
+      "optional_explanation": "The story describes a technical integration that provides value to the end user (readers), not just a technical capability. It is not conflating solutions or requirements."
+    },
+    {
+      "us_id": "US5",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Manny’s food service customer, I want to save, copy, print, and email my list so that I can manage it for reordering, verification, or sharing purposes.",
+      "optional_explanation": "The story clearly states the user, their goal, and the value, without conflating technical solutions or being overly broad."
+    },
+    {
+      "us_id": "US6",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a tester, I want detailed test plans so that I can thoroughly verify the system once it is completed.",
+      "optional_explanation": "The story is clear, with a focus on the tester’s goal and the value of thorough testing. It does not conflate solutions or requirements."
+    },
+    {
+      "us_id": "US7",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a business user, I want a report of item profitability so that I can identify profitable items and address underperformers.",
+      "optional_explanation": "The story clearly states the user, their goal, and the value, with no conflation or broad scope."
+    },
+    {
+      "us_id": "US8",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a system, I want to store customer account information and order lists in the database so that the system can manage customer data and orders effectively.",
+      "optional_explanation": "The story describes a technical requirement that supports system functionality, not a user-facing goal, but it is clear and focused."
+    },
+    {
+      "us_id": "US9",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a customer ordering food, I want to locate my previous order lists so that I can review past orders and reorder easily.",
+      "optional_explanation": "The story has a clear user goal and value, with no conflation or overly broad scope."
+    },
+    {
+      "us_id": "US10",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Manny’s food service customer, I want my custom item code to stand out so that I can find it quickly on the screen.",
+      "optional_explanation": "The story is straightforward, with a clear user goal and value, and no conflation."
+    },
+    {
+      "us_id": "US11",
+      "estimated_problem_id": 4,
+      "corrected_us": "As a blogger who codes, I want my GitHub activity displayed in my profile so that readers can see my coding contributions and projects.",
+      "optional_explanation": "This is similar to US4; it describes a technical feature that provides value to the end user, not just a technical capability."
+    },
+    {
+      "us_id": "US12",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Manny’s food service customer, I want to save my list so that I can reorder from it later for more accurate and faster ordering.",
+      "optional_explanation": "The story clearly states the user, goal, and value, with no conflation."
+    },
+    {
+      "us_id": "US13",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a customer ordering food, I want to see my saved order lists so that I can reuse them for future orders, making the process faster and more accurate.",
+      "optional_explanation": "The story is clear, focused, and provides a direct user value."
+    },
+    {
+      "us_id": "US14",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a user, I want a dropdown with autocomplete and API-based search so that I can find products quickly.",
+      "optional_explanation": "The story clearly states the user, their goal, and the value, with no conflation."
+    },
+    {
+      "us_id": "US15",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a user, I want a new reporting system so that I can view all company data in one place.",
+      "optional_explanation": "The story is broad but still a valid user goal; it could be broken down further, but it does not violate the core problem rules."
+    },
+    {
+      "us_id": "US16",
+      "estimated_problem_id": 4,
+      "corrected_us": "As a developer, I want to finalize database table changes for the release so that the system's data model is ready without needing later modifications.",
+      "optional_explanation": "This describes a technical task that supports development, not a user-facing goal, fitting the technical story problem."
+    },
+    {
+      "us_id": "US17",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a business user, I want a report of item profitability so that I can identify profitable items and address underperforming ones.",
+      "optional_explanation": "This is similar to US7; it clearly states the user, goal, and value."
+    },
+    {
+      "us_id": "US18",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Google Keep user, I want my shopping lists in black and my daily notes in blue so that I can easily differentiate between them.",
+      "optional_explanation": "The story clearly states the user, goal, and value, with no conflation."
+    },
+    {
+      "us_id": "US19",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a customer, I want to withdraw cash from an ATM so that I don't have to wait in line at the bank.",
+      "optional_explanation": "The story is straightforward, with a clear user goal and value."
+    },
+    {
+      "us_id": "US20",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a project manager, I want to share projects with other users so that we can collaborate effectively.",
+      "optional_explanation": "The story clearly states the user, goal, and value, with no issues."
+    }
+  ]
+}
