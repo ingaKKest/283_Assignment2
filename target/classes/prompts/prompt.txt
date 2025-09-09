@@ -14,19 +14,19 @@ Output must be a single JSON object with a top-level results key.
 
 Here are the problems and their definitions:
 
-ID: 1 - Conflate Problems with Solutions: Too much detail, locks developers into a specific implementation
+ID: 1 - Conflate Problems with Solutions: The story specifies how something should be built (a solution or technology) instead of what the user needs or why. This restricts implementation options unnecessarily.
 
-ID: 2 - Misplaced Requirements: The “so that…” section should describe the rationale, not additional requirements 
+ID: 2 - Misplaced Requirements: The story mixes rationale with requirements or constraints. The explanation/value portion includes extra features or conditions instead of just the reason the user wants it.
 
-ID: 3 - Ultra-huge story: Too broad. If there are a lot of “ands” or “ors, consider breaking down to multiple stories
+ID: 3 - Ultra-huge story: The story covers multiple distinct features, actions, or goals all at once. It is too broad to implement as a single, small, deliverable increment. Look for “and” / “or” chains or unrelated capabilities grouped together.
 
-ID: 4 - Technical User Story: Beware of user stories where “so that” is a technical capability, not of any value to the end user.
+ID: 4 - Technical User Story: The story is written in terms of system capabilities, architecture, or technical enablement, not in terms of user-facing value. It describes what the system does rather than what the user gains.
 
-ID: 5 - Poorly defined user roles: Roles may be too vague, not giving enough information (e.g as a user) or roles can be too specific. Two roles that should be combined can give duplicate user stories
+ID: 5 - Poorly defined user roles: The actor is unclear (e.g., just “user”) or overly narrow/duplicated. Roles don’t provide enough context to understand whose perspective the story represents.
 
-ID: 6 - Parakeet Value: Beware when the “so that” phrase is a restatement of the “I want” phrase
+ID: 6 - Parakeet Value: The stated benefit or rationale simply repeats the user’s goal without adding new meaning. The “why” is a rephrasing of the “what.”
 
-ID: 0 - No Problem: The story has none of the above
+ID: 0 - No Problem: The story is well-formed, focused, and free of the above issues.
 
 
 Here are two examples that demonstrate the correct thought process and output format for two different problem types.
