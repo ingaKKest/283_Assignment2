@@ -2,96 +2,132 @@
 
 Instructions to AI:
 
-Evaluate each user story based on role → goal → value.
+For each user story, analyze the role → goal → value.
 
-Apply rules in strict priority order:
+Assign exactly one problem ID per story, following this priority order:
 1 → 3 → 2 → 4 → 5 → 6 → 0
 
-This order ensures ultra-huge stories and technical solutions are captured before other categories.
+Output a JSON object with a top-level results array. Each entry must include:
 
-Assign only one problem ID per story, the first matching rule.
+us_id → the story’s unique identifier
 
-Output JSON with keys:
+estimated_problem_id → problem ID (0–6)
 
-us_id → unique story identifier
+corrected_us → concise, clear, rewritten user story that fixes the identified problem
 
-estimated_problem_id → selected ID (0–6)
+optional_explanation → brief reasoning behind the classification
 
-corrected_us → corrected, concise user story
-
-optional_explanation → clear reasoning for classification
-
-Problem Rules & Red Flags
+Problem Definitions
 
 ID 1 – Conflate Problems with Solutions (Priority 1)
-Assign ID 1 if the goal contains any of these technical or implementation-specific terms:
 
-RGB, HEX, CMYK, HSL, inline CSS, hardcoded styles, pixel values (px, em, rem)
+Goal specifies a technical solution rather than the underlying user need.
 
-Dropdown, slider, checkbox, button type, input type, autocomplete, API search
-
-OAuth, SAML, JWT, OpenID Connect
-
-REST, GraphQL, gRPC, SOAP, HTTP, HTTPS
-
-JSON, XML, CSV, PDF, DOCX, XLSX, MP3, WAV, MP4, JPEG, PNG, SVG
-
-React, Angular, Vue, Flutter, jQuery, Bootstrap, Tailwind
-
-AWS, Azure, GCP, Lambda, EC2, Kubernetes, Docker, serverless, container
-
-Microservices, monolith, SOA, API-first, headless, caching, sharding, indexing, load balancer
-
-PostgreSQL, MySQL, MongoDB, Redis, table names, schemas, indexes
-
-Examples: RGB color codes in goal, API-based search, hardcoded UI element.
+Corrected story focuses on user goal and value, not technical implementation.
 
 ID 3 – Ultra-huge Story (Priority 2)
-Assign ID 3 if the goal or value contains multiple unrelated actions or multiple “and/or” phrases, or the story spans a large workflow (e.g., save, copy, print, email).
 
-Example: “save, copy, print, and email my list” → ID3
+Story contains multiple unrelated actions, “and/or” phrases, or spans a large workflow.
+
+Corrected story should be smaller and atomic.
 
 ID 2 – Misplaced Requirements (Priority 3)
-Assign ID 2 if the value / ‘so that’ clause:
 
-Contains another feature, workflow step, or system requirement instead of rationale, and the value describes user benefit.
+Value contains another feature or workflow step instead of rationale.
 
-Example: “so that readers can see my GitHub activity in my profile” → ID2 (user-facing rationale, not technical)
+Corrected story should move rationale to the value and remove extra requirements.
 
 ID 4 – Technical User Story (Priority 4)
-Assign ID 4 if the value describes only a technical capability or system behavior with no user-facing benefit.
 
-Example: “so that I can test the system,” “so that database changes are finalized.”
+Value describes only technical capability, with no user-facing benefit.
+
+Corrected story should highlight the user benefit.
 
 ID 5 – Poorly Defined User Roles (Priority 5)
-Assign ID 5 if the role is vague or generic, or duplicates another story:
 
-“business user,” “user,” “administrator,” “system.”
+Role is vague, generic, or duplicated.
 
-Role does not map to a clear real-world persona.
+Corrected story should clarify the role as a specific persona.
 
 ID 6 – Parakeet Value (Priority 6)
-Assign ID 6 if the value simply repeats the goal without adding rationale or benefit.
 
-Example: “I want to search items so that I can find items.”
+Value simply repeats the goal.
+
+Corrected story should express a distinct benefit or rationale.
 
 ID 0 – No Problem (Priority 7 / Default)
-Assign ID 0 if none of the other rules match:
 
-Role is clear and specific.
+Role is clear, goal is user-facing, value is distinct, story is atomic.
 
-Goal is user-facing, not solution-prescriptive.
+Output Format Example
 
-Value is distinct, rationale-focused, story is atomic and achievable.
-
-JSON Output Example
-{
+"""{
   "results": [
     {
       "us_id": "US1",
       "estimated_problem_id": 1,
-      "corrected_us": "As a Manny’s food service customer, I want to identify food item types quickly so that I can distinguish meats, grains, and vegetables at a glance.",
-      "optional_explanation": "The goal specifies exact RGB values, which is a technical solution. Corrected story focuses on the underlying user goal of quickly identifying food types."
+      "corrected_us": "As a Manny’s food service customer, I want to quickly identify food item types so that I can distinguish meats, grains, and vegetables at a glance.",
+      "optional_explanation": "The original goal specified RGB values, which is a technical solution. Corrected story focuses on the underlying user goal."
     }
   ]
-}
+}"""
+
+nternal Red-Flag Checklist for AI
+
+Use this as an internal reasoning tool only; do not output directly.
+
+ID1 (Conflate Problems with Solutions) Red Flags:
+
+RGB, HEX, CMYK, HSL color codes
+
+Inline CSS, pixel values, font names
+
+Dropdowns, sliders, checkboxes, autocomplete, API search
+
+Authentication protocols: OAuth, SAML, JWT
+
+Frameworks: React, Angular, Vue, Flutter, Bootstrap, Tailwind
+
+Databases & schema: PostgreSQL, MySQL, MongoDB, Redis, table names
+
+Cloud / DevOps: AWS, Azure, GCP, Docker, Lambda, Kubernetes, serverless
+
+ID3 (Ultra-huge Story) Red Flags:
+
+Multiple unrelated goals or actions
+
+“And/or” phrases
+
+Full workflows bundled in a single story
+
+ID2 (Misplaced Requirements) Red Flags:
+
+Value contains another feature, workflow step, or requirement instead of rationale
+
+ID4 (Technical User Story) Red Flags:
+
+Value describes technical capability only
+
+No user-facing benefit mentioned
+
+ID5 (Poorly Defined Roles) Red Flags:
+
+Role is generic: “user,” “business user,” “administrator,” “system”
+
+ID6 (Parakeet Value) Red Flags:
+
+Value repeats the goal verbatim
+
+No new rationale or benefit added
+
+Usage: Apply these checks internally during reasoning to decide which ID fits best.
+
+Notes for AI
+
+Always reason step by step: identify role → goal → value before classifying.
+
+Apply priority order strictly. First match wins.
+
+Output only the JSON object — no commentary outside the results array.
+
+corrected_us should resolve the identified problem while remaining concise and user-focused.
