@@ -19,46 +19,143 @@ There are seven possible classifications that can be given to user stories, each
 ID: 1 - Conflate Problems with Solutions: A user story conflates the problem with the solution if the goal of the user story describes the solution.
   For example:
   The goal discribes how the to acomplish the desired value 
+
   If the goal can be rewritten to remove how it is acomplished. 
+
   The goal discribes some software or hardware implementation that provides the discribed value
+
   The goal or value discribes some specific technology. Ignore high level ideas such as screen, display, or general devices. 
+
+  Examples of Technical standards / protocols that may be suggested which are actually part of the solution
+
+    RGB, HEX, CMYK
+
+    OAuth, SAML, JWT
+
+    REST, GraphQL, gRPC
+
+    HTTP, HTTPS, TCP/IP
+
+    JSON, XML, CSV
+
+    Examples Specific technologies / vendors
+
+    AWS, Azure, GCP
+
+    Kubernetes, Docker, Lambda, EC2
+
+    PostgreSQL, MySQL, MongoDB, Redis
+
+    React, Angular, Vue, Flutter
+
+    Jenkins, GitHub Actions, CircleCI
+
+    Examples of Implementation details
+
+    Microservices, Monolith, SOA
+
+    API-first, Headless
+
+    Caching, Sharding, Indexing
+
+    Container, VM, Serverless
+
+    RGB sliders, Dropdowns, Checkboxes (when part of “goal” instead of “UI freedom”)
+
+    Examples of File formats / media
+
+    PDF, DOCX, XLSX
+
+    MP3, WAV, MP4
+
+    JPEG, PNG, SVG
 
 
 ID: 2 - Misplaced Requirements: A user story has misplaced requirements if the value of the user story describes the requirements of the solution, rather than the rationale of the goal. 
   For example the vlaue discribes how the value would be acomplished, rather than wohat value is desired
+  Value clause contains another feature or workflow step instead of a rationale.
+  Value statement looks like another “I want…” (e.g., “I want to log in so that I can reset my password”).
+  Value describes a system capability rather than user benefit (e.g., “so that I can filter by region” when the goal is export).
+  Removing the “so that” still leaves a valid story.
 
 
 ID: 3 - Ultra-huge story: A user story could be considered ultra huge if it has multiple users, goals, and or values
   For example:
+
   User storys useing and/or in the goal or value
+
   User stories with multiple goals
+
   User stories with multiple values
+
   User stories that could be split into multiple different stories each with different roles
+
   User stories that could be split into multiple different stories each with different goals
+
   User stories that could be split into multiple different stories each with different values
+
+  Story has multiple “ands” or “ors” in the goal/value.
+
+  Story includes multiple unrelated actions (e.g., “sign up, log in, manage my profile, and browse products”).
+
+  Goal covers a large workflow instead of a single action.
+
+  Story feels like an epic rather than a task-sized increment.
 
 
 ID: 4 - Technical User Story: A user story could be considered Technical if the value describes the technical ability of the system rather than the value provided to the end user. 
   For Example:
   Any user story discussing system performance or optimistion
+
   Any user story providing valuye to the system
+
   ANy user story providing value to the devolper. 
+
+  Value expresses only a technical capability (e.g., scalability, uptime, decoupled deployments).
+
+  Value is framed in technical terms, not business/user benefit.
+
+  Story is about system internals, not end-user goals (e.g., “so that services can communicate asynchronously”).
+
+  Role is technical but value isn’t tied to user-facing outcome.
 
 
 ID: 5 - Poorly defined user roles: A user story can have poorly defined user roles should that role provide little context to what and why that user is trying to achieve their goal. As well as offering less context as to who the value of the user story benefits. 
   For example:
   A business user is an abstract user. It could encompass many roles such as an accountant, salesman etc. This should be flagged
+
   User roles that could encompass many different types of user shoudl be flagged. 
+
+  Role is too vague (e.g., “user,” “business user,” “administrator”).
+
+  Role is too specific to an individual (e.g., “John from HR”).
+
+  Role overlaps with others causing duplicate stories.
+
+  Role doesn’t map to a real-world persona or clear responsibility.
 
 
 ID: 6 - Parakeet Value: A user story demonstrates parakeet value when the value is simply a reiteration of the goal. 
   For example:
-  If the 
+  Value simply restates the goal in different words.
 
-ID: 0 - No Problem: the story exhibits symptoms of none of the above classifications and has a clearly defined user role, goal, and value.  
+  Value doesn’t add new information about why it matters.
 
+  Example: “I want to search for items so that I can find items.”
 
-Follow these rules for each user story
+  The goal and value are tautological.
+
+ID: 0 - No Problem: the story exhibits symptoms of none of the above classifications and has a clearly defined user role, goal, and value. 
+FOr example: 
+  Role is clear and specific.
+
+  Goal is user-facing, not solution-prescriptive.
+
+  Value is distinct, rationale-focused, and not another requirement.
+
+  Story is atomic, achievable, and business-relevant.
+
+  Follow these rules for each user story
 
 
 If anything is outputted it will be in a results JSON file in the format shown in the example below:
@@ -111,8 +208,8 @@ The lowest priority classification is ID0.
 A Corrected user story must keep the same role and intent where possible
 A corrected user story must be a concise single sentence
 A corrected user story must follow the “ As a [User], I want [Goal] so that [value]” format 
-A corrected user story should only be made once the user story has been classified and an optional explanation generated. 
-A corrected user story must not affect the classification of the orginal user story. 
+"""A corrected user story should only be made once the user story has been classified and an optional explanation generated. """
+"""A corrected user story must not affect the classification of the orginal user story."""
 
 
 
