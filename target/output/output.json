@@ -1,122 +1,124 @@
-[
-  {
-    "us_id": "US1",
-    "estimated_problem_id": 0,
-    "corrected_us": "As a Manny’s food service customer, I want to see different food item types displayed in different colors so that I can quickly identify food types.",
-    "optional_explanation": "The story clearly states a user-facing goal and benefit, with no technical implementation details."
-  },
-  {
-    "us_id": "US2",
-    "estimated_problem_id": 0,
-    "corrected_us": "As a reader, I want to bookmark pages so that I can quickly find relevant content in the future.",
-    "optional_explanation": "The goal is user-facing and specific, with a clear benefit."
-  },
-  {
-    "us_id": "US3",
-    "estimated_problem_id": 0,
-    "corrected_us": "As a Manny’s food service customer, I want to save my list so that I can reuse, print, or email it for other uses.",
-    "optional_explanation": "The story has a clear user role, goal, and benefit, focusing on reusing the list."
-  },
-  {
-    "us_id": "US4",
-    "estimated_problem_id": 4,
-    "corrected_us": "As a blogger who codes, I want the blogging system to integrate with GitHub so that readers can see my GitHub activity in my profile.",
-    "optional_explanation": "The value describes a technical capability without a direct user benefit, fitting ID 4."
-  },
-  {
-    "us_id": "US5",
-    "estimated_problem_id": 0,
-    "corrected_us": "As a Manny’s food service customer, I want to save, copy, print, and email my list so that I can edit it, check shipments, or share it.",
-    "optional_explanation": "The story clearly states user actions and benefits, though it contains multiple actions, but still focused on user goals."
-  },
-  {
-    "us_id": "US6",
-    "estimated_problem_id": 4,
-    "corrected_us": "As a tester, I want to have detailed test plans so that I can verify the system when it is completed.",
-    "optional_explanation": "The goal is technical testing, with no direct user-facing benefit, fitting ID 4."
-  },
-  {
-    "us_id": "US7",
-    "estimated_problem_id": 0,
-    "corrected_us": "As a business user, I want a report of item profitability so that I can identify profitable items and address underperformers.",
-    "optional_explanation": "The story has a clear user role, goal, and benefit, with no technical details."
-  },
-  {
-    "us_id": "US8",
-    "estimated_problem_id": 4,
-    "corrected_us": "As a system, I want to store customer account info and order lists in the database.",
-    "optional_explanation": "The value describes a technical capability without user-facing benefit, fitting ID 4."
-  },
-  {
-    "us_id": "US9",
-    "estimated_problem_id": 0,
-    "corrected_us": "As a customer ordering food, I want to locate previous order lists so that I can see all my past orders.",
-    "optional_explanation": "The goal is user-facing and specific, with a clear benefit."
-  },
-  {
-    "us_id": "US10",
-    "estimated_problem_id": 0,
-    "corrected_us": "As a Manny’s food service customer, I want my custom item code to stand out so that I can find it more quickly on the screen.",
-    "optional_explanation": "The story has a clear user role, goal, and benefit, with no technical implementation details."
-  },
-  {
-    "us_id": "US11",
-    "estimated_problem_id": 4,
-    "corrected_us": "As a blogger who codes, I want my GitHub activity to be displayed in my profile so that readers can see my coding activity and read my posts.",
-    "optional_explanation": "The value describes a technical capability without a direct user benefit, fitting ID 4."
-  },
-  {
-    "us_id": "US12",
-    "estimated_problem_id": 0,
-    "corrected_us": "As a Manny’s food service customer, I want to save my list so that I can reorder from it for more accurate food orders.",
-    "optional_explanation": "The goal is user-facing and specific, with a clear benefit."
-  },
-  {
-    "us_id": "US13",
-    "estimated_problem_id": 0,
-    "corrected_us": "As a customer, I want to see my saved food order lists so that I can reuse them for future orders, making ordering faster and more accurate.",
-    "optional_explanation": "The story has a clear user role, goal, and benefit."
-  },
-  {
-    "us_id": "US14",
-    "estimated_problem_id": 0,
-    "corrected_us": "As a user, I want a dropdown with autocomplete and API-based search so that I can find products quickly.",
-    "optional_explanation": "The goal is user-facing and specific, with no technical implementation details."
-  },
-  {
-    "us_id": "US15",
-    "estimated_problem_id": 4,
-    "corrected_us": "As a user, I want a new reporting system so that I can see all company data.",
-    "optional_explanation": "The value describes a technical capability without a direct user benefit, fitting ID 4."
-  },
-  {
-    "us_id": "US16",
-    "estimated_problem_id": 4,
-    "corrected_us": "As a developer, I want to finalize database table changes for the release so that we avoid making changes later.",
-    "optional_explanation": "The goal is technical and internal, fitting ID 4."
-  },
-  {
-    "us_id": "US17",
-    "estimated_problem_id": 0,
-    "corrected_us": "As a business user, I want a report of item profitability so that I can identify and address underperforming items.",
-    "optional_explanation": "The story has a clear user role, goal, and benefit, similar to US7."
-  },
-  {
-    "us_id": "US18",
-    "estimated_problem_id": 4,
-    "corrected_us": "As a Google Keep user, I want my shopping lists in black and my notes in blue so that I can differentiate them easily.",
-    "optional_explanation": "The value describes a technical capability without a direct user benefit, fitting ID 4."
-  },
-  {
-    "us_id": "US19",
-    "estimated_problem_id": 4,
-    "corrected_us": "As a customer, I want to withdraw cash from an ATM so that I don't have to wait in line at the bank.",
-    "optional_explanation": "The goal is user-facing, but the story is somewhat generic; still, it fits ID 0 due to clarity."
-  },
-  {
-    "us_id": "US20",
-    "estimated_problem_id": 4,
-    "corrected_us": "As a project manager, I want to share projects with other users so that we can collaborate.",
-    "optional_explanation": "The value describes a technical capability without a direct user benefit, fitting ID 4."
-  }
-]
+{
+  "results": [
+    {
+      "us_id": "US1",
+      "estimated_problem_id": 1,
+      "corrected_us": "As a Manny’s food service customer, I want to see different food item types displayed in different colors so that I can quickly identify food types at a glance.",
+      "optional_explanation": "The original goal specified RGB values, which is a technical solution. Corrected story focuses on the underlying user goal."
+    },
+    {
+      "us_id": "US2",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a reader, I want to bookmark pages so that I can easily find relevant content later.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US3",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Manny’s food service customer, I want to save my list so that I can print, email, or access it later for various uses.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US4",
+      "estimated_problem_id": 1,
+      "corrected_us": "As a blogger who codes, I want my blogging system to integrate with GitHub so that my readers can see my activity in my profile.",
+      "optional_explanation": "The original goal specifies a technical integration, which is a solution. Corrected story focuses on user benefit."
+    },
+    {
+      "us_id": "US5",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Manny’s food service customer, I want to save, copy, print, and email my list so that I can manage and share it for various purposes.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US6",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a tester, I want detailed test plans so that I can verify the system functions correctly after completion.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US7",
+      "estimated_problem_id": 1,
+      "corrected_us": "As a business user, I want a report of item profitability so that I can identify profitable items and address underperformers.",
+      "optional_explanation": "The original goal specifies a technical report, which is a solution. Corrected story focuses on user goal."
+    },
+    {
+      "us_id": "US8",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a system, I want to store customer account info and order lists in the database so that the system can manage customer data effectively.",
+      "optional_explanation": "The role is clear, goal is system-centric but user-relevant, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US9",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a customer ordering food, I want to see my previous order lists so that I can review and reorder them easily.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US10",
+      "estimated_problem_id": 1,
+      "corrected_us": "As a Manny’s food service customer, I want my custom item code to stand out so that I can find it quickly on the screen.",
+      "optional_explanation": "The original goal specifies a technical display feature, which is a solution. Corrected story focuses on user benefit."
+    },
+    {
+      "us_id": "US11",
+      "estimated_problem_id": 1,
+      "corrected_us": "As a blogger who codes, I want my GitHub activity displayed in my profile so that readers can see my coding activity and posts.",
+      "optional_explanation": "The original goal specifies a technical display, which is a solution. Corrected story focuses on user benefit."
+    },
+    {
+      "us_id": "US12",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Manny’s food service customer, I want to save my list so that I can reorder accurately and efficiently later.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US13",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a customer ordering food, I want to see my saved order lists so that I can reuse them for faster, more accurate ordering.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US14",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a user, I want a dropdown with autocomplete and API search so that I can find products quickly.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US15",
+      "estimated_problem_id": 1,
+      "corrected_us": "As a user, I want a new reporting system so that I can see all company data clearly.",
+      "optional_explanation": "The original goal specifies a technical system, which is a solution. Corrected story focuses on user benefit."
+    },
+    {
+      "us_id": "US16",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a developer, I want to finalize database table changes before release so that we avoid making later modifications.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US17",
+      "estimated_problem_id": 1,
+      "corrected_us": "As a business user, I want a report of item profitability so that I can identify and improve underperforming items.",
+      "optional_explanation": "The original goal specifies a technical report, which is a solution. Corrected story focuses on user goal."
+    },
+    {
+      "us_id": "US18",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Google Keep user, I want my shopping lists in black and my notes in blue so that I can easily differentiate between them.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US19",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a customer, I want to withdraw cash from an ATM so that I can avoid waiting in line at the bank.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    },
+    {
+      "us_id": "US20",
+      "estimated_problem_id": 0,
+      "corrected_us": "As a project manager, I want to share projects with other users so that we can collaborate effectively.",
+      "optional_explanation": "The role is clear, goal is user-facing, value is distinct, and story is atomic."
+    }
+  ]
+}
