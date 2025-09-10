@@ -2,123 +2,123 @@
   "results": [
     {
       "us_id": "US1",
-      "estimated_problem_id": 6,
-      "corrected_us": "As a Manny’s food service customer, I want to see food item types displayed in different colors so that I can quickly identify the food type visually.",
-      "optional_explanation": "The story is overly specific about color codes, which are implementation details. The core goal is to enable quick identification of food types, making it a manageable, focused story."
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Manny’s food service customer, I want food items to be displayed in different colors based on type so that I can quickly identify the food type.",
+      "optional_explanation": "The story clearly states a user goal and value, with no conflation of problem and solution or other issues."
     },
     {
       "us_id": "US2",
       "estimated_problem_id": 0,
       "corrected_us": "As a reader, I want to bookmark pages so that I can easily find relevant content later.",
-      "optional_explanation": "The story is clear and well-defined, with no problem identified."
+      "optional_explanation": "The story is well-defined, with a clear role, goal, and value, exhibiting no problems."
     },
     {
       "us_id": "US3",
       "estimated_problem_id": 0,
-      "corrected_us": "As a Manny’s food service customer, I want to save my list so that I can access, print, or email it later.",
-      "optional_explanation": "The story is clear and focused, with no issues."
+      "corrected_us": "As a Manny’s food service customer, I want to save my list so that I can reorder or use it later.",
+      "optional_explanation": "The goal and value are clear, and the story is focused on user benefit without conflating solutions or requirements."
     },
     {
       "us_id": "US4",
       "estimated_problem_id": 4,
-      "corrected_us": "As a blogger who codes, I want the blogging system to display my GitHub activity so that my readers can see my coding contributions.",
-      "optional_explanation": "The story involves technical integration that provides value to readers, not just technical capability, so it is a valid user story."
+      "corrected_us": "As a blogger who codes, I want my blogging system to display my GitHub activity so that readers can see my coding contributions.",
+      "optional_explanation": "The story describes system capabilities rather than user benefits, focusing on technical ability, which classifies it as a Technical user story (ID: 4)."
     },
     {
       "us_id": "US5",
-      "estimated_problem_id": 3,
-      "corrected_us": "As a Manny’s food service customer, I want to save, copy, print, and email my list so that I can manage it for future use, shipment checks, or sharing with restaurants.",
-      "optional_explanation": "The story is too broad, combining multiple actions into one. It should be broken down into smaller stories for each action."
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Manny’s food service customer, I want to save, copy, print, and email my list so that I can manage and share it effectively.",
+      "optional_explanation": "The story clearly states a user goal and value, with no conflation or other issues."
     },
     {
       "us_id": "US6",
-      "estimated_problem_id": 3,
-      "corrected_us": "As a tester, I want detailed test plans so that I can thoroughly verify the system once it is completed.",
-      "optional_explanation": "The story is too broad, covering all testing activities. It should specify creating detailed test plans for specific features or modules."
+      "estimated_problem_id": 0,
+      "corrected_us": "As a tester, I want detailed test plans so that I can thoroughly test the system once it is completed.",
+      "optional_explanation": "The story is well-defined, focusing on testing activities rather than conflating problems or requirements."
     },
     {
       "us_id": "US7",
       "estimated_problem_id": 0,
-      "corrected_us": "As a business user, I want a report of item profitability so that I can identify profitable items and address underperformers.",
-      "optional_explanation": "The story is clear and focused, with no issues."
+      "corrected_us": "As a business user, I want a report of item profitability so that I can identify profitable and underperforming items.",
+      "optional_explanation": "The goal and value are clear, with no issues of conflation or misplacement."
     },
     {
       "us_id": "US8",
       "estimated_problem_id": 0,
-      "corrected_us": "As a system, I want to store customer account info and order lists in the database so that the system can manage customer data and orders.",
-      "optional_explanation": "The story is technically focused but describes system behavior that provides value; it is acceptable."
+      "corrected_us": "As a system, I want to store customer account info and order lists in the database so that data is persisted and retrievable.",
+      "optional_explanation": "The story describes system capability rather than user benefit, classifying it as a Technical user story (ID: 4)."
     },
     {
       "us_id": "US9",
       "estimated_problem_id": 0,
-      "corrected_us": "As a customer ordering food, I want to locate my previous order lists so that I can review and reorder them easily.",
-      "optional_explanation": "The story is clear and user-focused, with no issues."
+      "corrected_us": "As a customer, I want to locate my previous food order lists so that I can view all my past orders.",
+      "optional_explanation": "The story has a clear role, goal, and value, with no conflation or other problems."
     },
     {
       "us_id": "US10",
-      "estimated_problem_id": 6,
-      "corrected_us": "As a Manny’s food service customer, I want my custom item code to stand out on the screen so that I can find it more quickly.",
-      "optional_explanation": "The story specifies a visual cue (stand out) rather than implementation details, making it a focused, manageable story."
+      "estimated_problem_id": 0,
+      "corrected_us": "As a Manny’s food service customer, I want my custom item code to stand out so that I can find it quickly on the screen.",
+      "optional_explanation": "The goal and value are clear, with no issues of conflation or misplacement."
     },
     {
       "us_id": "US11",
-      "estimated_problem_id": 4,
+      "estimated_problem_id": 0,
       "corrected_us": "As a blogger who codes, I want my GitHub activity displayed in my profile so that readers can see my coding contributions.",
-      "optional_explanation": "The story involves a user-facing feature that adds value, not just technical capability, so it is appropriate."
+      "optional_explanation": "The story clearly states a user goal and value, with no conflation issues."
     },
     {
       "us_id": "US12",
       "estimated_problem_id": 0,
-      "corrected_us": "As a Manny’s food service customer, I want to save my list so that I can reorder from it later for more accurate food orders.",
-      "optional_explanation": "The story is clear and focused, with no issues."
+      "corrected_us": "As a Manny’s food service customer, I want to save my list so that I can reorder accurately later.",
+      "optional_explanation": "The story is focused on user benefit, with a clear goal and value, no conflation or other issues."
     },
     {
       "us_id": "US13",
       "estimated_problem_id": 0,
-      "corrected_us": "As a customer, I want to see my saved food order lists so that I can reuse them for future orders, making the process faster and more accurate.",
-      "optional_explanation": "The story is clear and user-centered, with no issues."
+      "corrected_us": "As a customer, I want to see my saved food order lists so that I can reuse them for future orders.",
+      "optional_explanation": "The story has a clear role, goal, and value, with no problems."
     },
     {
       "us_id": "US14",
       "estimated_problem_id": 0,
-      "corrected_us": "As a user, I want a dropdown with autocomplete and API-based search so that I can find products quickly.",
-      "optional_explanation": "The story is clear and well-defined, with no issues."
+      "corrected_us": "As a user, I want a dropdown with autocomplete and API search so that I can find products quickly.",
+      "optional_explanation": "The story clearly states a user goal and value, with no conflation or other issues."
     },
     {
       "us_id": "US15",
-      "estimated_problem_id": 3,
+      "estimated_problem_id": 0,
       "corrected_us": "As a user, I want a new reporting system so that I can see all company data.",
-      "optional_explanation": "The story is broad but acceptable as a high-level goal; it could be broken down further, but it is not necessarily a problem."
+      "optional_explanation": "The story is broad but still clearly states a goal and value; no conflation or other problems."
     },
     {
       "us_id": "US16",
-      "estimated_problem_id": 0,
-      "corrected_us": "As a developer, I want to finalize database table changes for the release so that we avoid making later modifications.",
-      "optional_explanation": "The story is clear and focused on a specific technical task, with no issues."
+      "estimated_problem_id": 4,
+      "corrected_us": "As a developer, I want to finalize database table changes so that the system is ready for release.",
+      "optional_explanation": "The story describes technical tasks rather than user benefits, classifying it as a Technical user story (ID: 4)."
     },
     {
       "us_id": "US17",
-      "estimated_problem_id": 3,
+      "estimated_problem_id": 0,
       "corrected_us": "As a business user, I want a report of item profitability so that I can identify profitable and underperforming items.",
-      "optional_explanation": "This is a duplicate of US7; it is acceptable but should be consolidated to avoid redundancy."
+      "optional_explanation": "Duplicate of US7, clear goal and value, no conflation."
     },
     {
       "us_id": "US18",
       "estimated_problem_id": 0,
-      "corrected_us": "As a Google Keep user, I want my shopping lists in black and my daily notes in blue so that I can easily differentiate them.",
-      "optional_explanation": "The story is clear and focused, with no issues."
+      "corrected_us": "As a Google Keep user, I want my shopping lists in black and notes in blue so that I can differentiate them easily.",
+      "optional_explanation": "The story clearly states a goal and value, with no issues."
     },
     {
       "us_id": "US19",
       "estimated_problem_id": 4,
-      "corrected_us": "As a customer, I want to withdraw cash from an ATM so that I don't have to wait in line at the bank.",
-      "optional_explanation": "The story involves a technical capability but directly provides value to the user, so it is appropriate."
+      "corrected_us": "As a customer, I want to withdraw cash from an ATM so that I can avoid waiting in line at the bank.",
+      "optional_explanation": "The story describes a technical capability rather than a user benefit, classifying it as a Technical user story (ID: 4)."
     },
     {
       "us_id": "US20",
       "estimated_problem_id": 0,
       "corrected_us": "As a project manager, I want to share projects with other users so that we can collaborate effectively.",
-      "optional_explanation": "The story is clear and user-focused, with no issues."
+      "optional_explanation": "The story has a clear role, goal, and value, with no conflation or other issues."
     }
   ]
 }
